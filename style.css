@@ -1,0 +1,119 @@
+/* @author: Leah Obot,
+@version: 1.0.0 */
+
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	min-height: 100vh;
+	background-color: #322f2f;
+	color: #e7eaff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 1.4rem;
+	gap: 2rem;
+	padding: 4rem 0 2rem 0;
+	position: relative;
+}
+
+header h1 {
+	font-size: 3rem;
+}
+
+.btn {
+	padding: 0.7rem 1.5rem;
+	margin: 1rem 0;
+	border-radius: 0.2rem;
+	border: 0;
+	outline: 0;
+	color: #322f2f;
+	transition: all 0.3s ease-in;
+}
+
+.btn:hover,
+#close-btn:hover {
+	background-color: #e9a3bd;
+	color: white;
+}
+
+.btn:active {
+	transform: scaleX(1.2);
+}
+
+#open-btn {
+	position: absolute;
+	top: 2rem;
+	left: 5rem;
+}
+
+#close-btn {
+	background-color: #322f2f;
+	color: #e7eaff;
+	margin-left: 35%;
+}
+
+.rules {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #e7eaff;
+	color: #322f2f;
+	height: 100%;
+	width: 30%;
+	padding: 2.5rem 0 0 1.5rem;
+	transition: all 1s ease-in-out;
+	transform: translateX(-50rem);
+}
+
+.rules h2 {
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+p {
+	margin-bottom: 1rem;
+}
+
+.start-container {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* background-color: rgba(0, 0, 0, 0.7); */
+	animation-name: startContainer;
+	animation-duration: 2s;
+}
+
+@keyframes startContainer {
+	from {
+		/* opacity: 0; */
+		background-color: rgba(0, 0, 0, 0.7);
+	}
+	to {
+		background-color: white;
+		/* opacity: 1; */
+	}
+}
+
+.display {
+	transform: translateX(0);
+}
+
+#canvas {
+	background-color: #fbfbfb;
+	border-radius: 0.5rem;
+}

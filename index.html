@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+      <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+                  integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+                  crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-16x16.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-32x32.png">
+            <link rel="stylesheet" href="./style.css">
+            <title>Bricks-Breaker</title>
+      </head>
+
+      <body>
+            <header>
+                  <h1>Bricks Breaker Game</h1>
+                  <button class="btn" id="open-btn">Show Rules</button>
+            </header>
+            <main class="container">
+                  <div class="rules">
+                        <h2>How To Play</h2>
+                        <p>
+                              Use the left and right arrow button on your keyboard to move around and bounce the ball up
+                              to break bricks
+                        </p>
+                        <p>
+                              If you miss the ball, your score and the bricks will reset
+                        </p>
+                        <button class="btn" id="close-btn">Close</button>
+                  </div>
+
+                  <canvas id="canvas" width="750" height="350"></canvas>
+            </main>
+
+            <footer>
+                  <small>Bricks-Breaker © 2022</small>
+            </footer>
+
+            <div class="start-container"><button class="btn start-game"><strong>Start-Game</strong></button></div>
+
+            <script src="./app.js"></script>
+      </body>
+
+</html>
